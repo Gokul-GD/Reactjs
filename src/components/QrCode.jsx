@@ -26,7 +26,7 @@ export const QrCode = () => {
     fetch(img).then((Response)=>Response.blob().then((blob)=>{
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
-        link.download="CuatomQR.png";
+        link.download="CustomQR.png";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
